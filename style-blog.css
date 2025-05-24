@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* * {
+  outline: 1px solid rgba(255, 0, 0, 0.2); /* 所有元素加上紅色細框 */
+/* } */ 
+
+body{
+	font-family: "Noto Sans TC", sans-serif;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+img{
+	width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+	color: #0027D5;
+	display: inline-block;
+
+}
+
+time{
+	margin-bottom: 4px;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.wrap{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.header{
+	display: flex;
+	justify-content: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.header a{
+	font-size: 28px;
+	font-weight: 700;
+	color: #000;
+	margin-right: 40px;
+}
+
+.banner{
+	display: flex;
+}
+
+.banner-img{
+	width: 50%;
+}
+
+.banner-content{
+	width: 50%;
+	padding-left: 80px;
+	padding-top: 300px;
+	color: #0027D5;
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+}
+
+.banner-content .banner-BLOG{
+	font-size: 120px;
+	font-weight: 900;
+}
+
+.banner-content .banner-title{
+	font-size: 28px;
+	font-weight: 700;
+}
+
+@media(max-width: 992px){
+	.banner{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.banner .banner-img{
+		width: 100%;
+	}
+
+	.banner .banner-content{
+		width: 100%;
+		padding-left: 24px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+	.banner-content .banner-BLOG{
+		font-size: 52px;
+	}
+
+}
+
+.content{
+	display: flex;
+}
+
+.content img{
+	width: 49.4%;
+	/* padding-right: 24px; */
+}
+
+.blog{
+	padding-top: 207px;
+	margin-left: 24px;
+	padding-right: 312px;
+}
+
+
+.blog .hashtag{
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
+.hashtag a{
+	margin-right: 8px;
+}
+
+.hashtag .highlight{
+	font-size: 16px;
+	font-weight: 700;
+	padding: 6px 12px;
+	background-color: #0027D5;
+	color: white;
+	border-radius: 40px;
+	vertical-align: top;
+}
+
+.blog-title{
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.blog-text{
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;  /* 限制顯示 2 行 */
+	line-clamp: 2;
+    overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.btn{
+	color: #4B4B4B;
+	padding: 8px 16px;
+	border-radius: 40px;
+	border: 1px solid black;
+}
+
+@media(max-width: 992px){
+	.content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.content img{
+		width: 100%;
+	}
+	.content .blog{
+		width: 100%;
+		padding: 48px 12px;
+		margin-left: 0px;
+	}
+}
+
+.search{
+	width: 416px;
+	display: flex;
+	border: 1px solid black;
+	border-radius: 40px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	margin-top: 80px;
+	margin-left: 312px;
+}
+
+.search .icon{
+	margin-right: 10px;
+
+}
+
+.search .icon svg{
+	display: block;
+
+}
+
+.blog-list{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	padding-left: 312px;
+}
+
+.card{
+	width: 416px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+.card .blog{
+	padding-top: 16px;
+	padding-right: 0px;
+	margin-left: 0px;
+}
+
+@media(max-width: 992px){
+	.search{
+		width: 85%;
+		padding: 16px;
+		margin-top: 64px;
+		margin-left: 12px;
+		margin-right: 12px;
+		display: block;
+		display: flex;
+	}
+	.blog-list{
+		padding: 0;
+	}
+
+	.card{
+		width: 100%;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+.pagenumber{
+	display: flex;
+	width: 328px;
+	height: 56px;
+	justify-content: center;
+	margin-bottom: 80px;
+	padding-left: 796px;
+}
+
+.pagenumber a{
+	width: 40px;
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+@media(max-width: 992px){
+	.pagenumber{
+		padding-left:  23.5px;
+		padding-right: 23.5px;
+		margin-bottom: 64px;
+	}
+}
+
+.footer{
+	display: flex;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 312px;
+}
+
+.footer .email{
+	width: 1036px;
+	font-size: 32px;
+	margin-right: 24px;
+}
+
+.link{
+	display: flex;
+	align-items:center ;
+}
+
+.copyright{
+	text-align: center;
+	padding: 24px 812.5px;
+}
+
+@media(max-width: 992px){
+	.footer{
+		display: none;
+	}
+	.copyright{
+		padding: 24px 40px;
+	}
+}

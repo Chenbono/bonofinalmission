@@ -55,9 +55,9 @@ table {
   box-sizing: border-box;
 }
 
-* * {
+/* * * {
   outline: 1px solid rgba(255, 0, 0, 0.2); 
-} 
+}  */
 
 body{
 	font-family: "Noto Sans TC", sans-serif;
@@ -124,6 +124,7 @@ span{
 .wrap{
 	max-width: 1920px;
 	margin: 0 auto;
+	background-color: #FBFBFB;
 }
 
 .header{
@@ -131,6 +132,7 @@ span{
 	justify-content: center;
 	padding-top: 24px;
 	padding-bottom: 24px;
+	margin-bottom: 0;
 	list-style: none;
 }
 
@@ -145,6 +147,7 @@ span{
 
 .content{
 	display: flex;
+	border: 1px solid #6c757d;
 }
 
 .content img{
@@ -153,7 +156,7 @@ span{
 }
 
 .blog{
-	padding-top: 207px;
+	padding-top: 263px;
 	margin-left: 24px;
 	padding-right: 312px;
 }
@@ -182,25 +185,11 @@ span{
 	font-size: 28px;
 	font-weight: 700;
 	margin-bottom: 8px;
+	color: #000;
 }
 
-.blog-text{
-	display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;  /* 限制顯示 2 行 */
-	line-clamp: 2;
-    overflow: hidden;
-	margin-bottom: 16px;
-}
 
-.btn{
-	color: #4B4B4B;
-	padding: 8px 16px;
-	border-radius: 40px;
-	border: 1px solid black;
-}
-
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.content{
 		display: flex;
 		flex-wrap: wrap;
@@ -214,9 +203,16 @@ span{
 		margin-left: 0px;
 	}
 }
+
+.wrap-container{
+	max-width: 1920px;
+	margin: 0 auto;
+	border: 1px solid #6c757d;
+
+}
  .container{
 	width: 636px;
-	margin: 80px 642px;
+	margin: 80px auto;
  }
 
  .container .content-top,.content-text{
@@ -257,7 +253,7 @@ span{
 	padding-bottom: 8px;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.container{
 		width: 100%;
 		margin: 0;
@@ -294,6 +290,11 @@ span{
 	margin-right: 24px;
 }
 
+.footer ul{
+	list-style: none;
+	padding: 0;
+}
+
 .link{
 	display: flex;
 	align-items:center ;
@@ -302,9 +303,10 @@ span{
 .copyright{
 	text-align: center;
 	padding: 24px 812.5px;
+	background-color: #FFFFFF;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.footer{
 		display: none;
 	}

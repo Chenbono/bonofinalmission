@@ -87,6 +87,7 @@ time{
 .wrap{
 	max-width: 1920px;
 	margin: 0 auto;
+	background-color: #FBFBFB;
 }
 
 .header{
@@ -129,7 +130,7 @@ time{
 	font-weight: 700;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.banner{
 		display: flex;
 		flex-wrap: wrap;
@@ -153,6 +154,7 @@ time{
 
 .content{
 	display: flex;
+	border: 1px solid #6C757D;
 }
 
 .content img{
@@ -208,7 +210,7 @@ time{
 	border: 1px solid black;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.content{
 		display: flex;
 		flex-wrap: wrap;
@@ -223,6 +225,11 @@ time{
 	}
 }
 
+.wrap-container{
+	border: 1px solid #6C757D;
+	padding-top: 80px;
+}
+
 .search{
 	width: 416px;
 	display: flex;
@@ -231,7 +238,6 @@ time{
 	padding-top: 16px;
 	padding-bottom: 16px;
 	padding-left: 16px;
-	margin-top: 80px;
 	margin-left: 312px;
 }
 
@@ -265,7 +271,7 @@ time{
 	margin-left: 0px;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.search{
 		width: 85%;
 		padding: 16px;
@@ -302,7 +308,7 @@ time{
 	padding-bottom: 16px;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.pagenumber{
 		padding-left:  23.5px;
 		padding-right: 23.5px;
@@ -331,9 +337,10 @@ time{
 .copyright{
 	text-align: center;
 	padding: 24px 812.5px;
+	background-color: #fff;
 }
 
-@media(max-width: 992px){
+@media(max-width: 767px){
 	.footer{
 		display: none;
 	}
